@@ -41,7 +41,7 @@ jobs:
       #    java-version: '8' # Требуется Java 8 для Gradle
 
       - name: Cache Node.js
-        uses: actions/cache@v2
+        uses: actions/cache@v3
         with:
             path: ~/.npm
             key: ${{ runner.os }}-node-modules-${{ hashFiles('**/package-lock.json') }}
